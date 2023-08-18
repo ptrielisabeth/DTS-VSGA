@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Motor | Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar-->
+      <div class="hd-container">
+        <div class="hd-row">
+          <div class="nav-logo">
+            <img src="img/logo.png" alt="logo" width="60%" height="70%" />
+          </div>
+          <div class="nav-title">
+            <h1>SABET MOTOR</h1>
+          </div>
+        </div>
+      </div>
+      <div class="hd-navbar-container">
+        <div class="hd-navbar-row">
+          <div class="hd-navbar">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="profile.html">Profile</a>
+              </li>
+              <li>
+                <a href="visimisi.html">Visi dan Misi</a>
+              </li>
+              <li>
+                <a href="produk.html">Produk Kami</a>
+              </li>
+              <li>
+                <a href="kontakkami.html">Kontak Kami</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Sidebar-->
+    <div class="wrap-sbct">
+      <div class="sb-container">
+        <div class="sb-con-col">
+          <div class="sb-list">
+            <ul>
+              <li>
+                <a href="artikel.html">Artikel</a>
+              </li>
+              <li>
+                <a href="event.html">Event</a>
+              </li>
+              <li>
+                <a href="galeri.html">Gallery Foto</a>
+              </li>
+              <li>
+                <a href="klien.html">Klien Kami</a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <!--<li>
+                <a href="#" style="padding-left: 20px">Sign In</a>
+              </li>
+              <li>
+                <a href="#" style="padding-left: 20px">Sign Up</a>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Content-->
+      <div class="ct-container">
+        <div class="ct-row">
+          <h1 id="login">Halaman Login</h1>
+
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required /><br /><br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required /><br /><br />
+
+            <input type="button" value="Login" onclick="validate()" />
+          </form>
+
+          <script>
+            function validate() {
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              if (username == "motoroar" && password == "motor123") {
+                alert("Login Berhasil!");
+                window.location.href = "./index.html";
+              } else {
+                alert("Login Gagal, Coba Lagi");
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class=""><p style="color: grey;">&#169; SABET MOTOR</p></div>
+    </footer>
+  </body>
+</html>
